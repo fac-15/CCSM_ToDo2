@@ -1,38 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" >
-
-<head>
-  <meta charset="UTF-8">
-  <title>TODOS</title>
-  <link rel="stylesheet" href="css/gridstyle.css">
-</head>
-<body>
-
-<h1>TODOS</h1>
-
-
-          <label class="container">
-            <input class="red" type="radio" name="done" value=""><p>Take a break. Take a break.</p><input type="checkbox" name="x" value="x" class="check">
-          </label>
-
-
-          <label class="container">
-            <input type="radio" name="done" value=""><p>Take a break. Take a break.</p><input type="checkbox" name="x" value="x" class="check">
-          </label>
-
-          <label class="container">
-            <input type="radio" name="done" value=""><p>Take a break. Take a break.Take a break.Take a break.Take a break.</p><input type="checkbox" name="x" value="x" class="check">
-          </label>
-
-          <label class="container">
-              <form id="add-todo">
-                <input type="text" name="description" value=""><br><br>
-                <input type="submit" name="" value="Submit">
-              </form>
-          </label>
-
-    <script  src="js/index.js"></script>
-
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>tdd todo</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id = "todo-container">
+        <ul>
+        </ul>
+    </div>
+    <form id="add-todo">
+      <input type="text" name="description" value="">
+      <input type="submit" name="" value="Submit">
+    </form>
   </body>
   <script type="text/javascript" src = "./logic.js"></script>
   <script type="text/javascript" src = "./dom.js"></script>

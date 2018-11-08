@@ -16,6 +16,11 @@
   var createTodoNode = function(todo) {
     var todoNode = document.createElement('li');
     // you will need to use addEventListener
+    var span = document.createElement('span');
+    // var newItem = todoFunction.addTodo(state, newTodo);
+    span.innerHTML = todo.description;
+
+    todoNode.appendChild(span)
 
     // add span holding description
 
@@ -40,11 +45,13 @@
       // https://developer.mozilla.org/en-US/docs/Web/Events/submit
       // what does event.preventDefault do?
       // what is inside event.target?
+      event.preventDefault();
 
-      var description = '?'; // event.target ....
+      var description = event.target.description.value; // event.target ....
+      // console.log(event.target.description.value);
 
       // hint: todoFunctions.addTodo
-      var newState = []; // ?? change this!
+      var newState = todoFunctions.addTodo(state, description); // ?? change this!
       update(newState);
     });
   }
