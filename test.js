@@ -1,5 +1,6 @@
 var test = require('tape');
-var logic = require('./logic');
+var logic = require('./logic.js');
+// var todoFunctions = require ('./logic.js');
 
 var arr = [
   {description: "charlie", done: false, id: 1},

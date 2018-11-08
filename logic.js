@@ -24,7 +24,17 @@ var todoFunctions = {
     });
   },
 
+  testFunc: function(a, b){
+    return a + b;
+  },
+
   addTodo: function(todos, newTodo) {
+    var todosCopy = todoFunctions.cloneArrayOfObjects(todos);
+    var id = todoFunctions.generateId();
+    var result = todosCopy.concat([{description: newTodo, id: id}]);
+    console.log(result);
+    return result;
+
     // should leave the input argument todos unchanged (you can use cloneArrayOfObjects)
     // returns a new array, it should contain todos with the newTodo added to the end.
     // add an id to the newTodo. You can use the generateId function to create an id.
@@ -81,6 +91,11 @@ var todoFunctions = {
 // The answer has something to do with needing to run code both in the browser and in Node.js
 // See this article for more details:
 // http://www.matteoagosti.com/blog/2013/02/24/writing-javascript-modules-for-both-browser-and-node/
+
+// if (typeof module !== 'undefined') {
+//   module.exports = logic;
+// }
+
 if (typeof module !== 'undefined') {
   module.exports = todoFunctions;
 }
