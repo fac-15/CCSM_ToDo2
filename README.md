@@ -17,6 +17,8 @@
 ![reading](https://media.giphy.com/media/3o6Ztl3rRVq6yZ5MT6/giphy.gif)
 
 - In loads of cases, we started writing code that had already been hinted at, or even fully provided for us.
+- **In fact**, we forgot about the functions that we wrote in logic.js, and starting trying to write that functionality directly into the dom.js... which caused a lot of problems.
+- Secondly, we were focusing on manipulating the existing array ``` state ```, instead of applying the functions we had forgotten about.
 
 ## Lessons learnt 
 - **READ THE CODEBASE COMPLETELY!!!!!!!!!!**
@@ -28,6 +30,7 @@
 <img src="https://media.giphy.com/media/n6xe7RntgjFyo/giphy.gif" width="200">.
 
 - All **git** stuff went pretty smoothly!
+- In our first week project we didn't pair very well, and ending up splitting up into teams. This time we were all sharing what we were doing better, and just working better as a team really!
 - Even though we could definitely have initially written more tests/covered more edge cases, we wrote **failing tests** that we then got to **pass**.
 - Sweet **CSS**.
 
