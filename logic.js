@@ -30,7 +30,9 @@ var todoFunctions = {
     // hint: array.concat
     var todosCopy = todoFunctions.cloneArrayOfObjects(todos);
     var id = todoFunctions.generateId();
-    var result = todosCopy.concat([{description: newTodo, done: false, id: id}]);
+    var result = todosCopy.concat([
+      { description: newTodo, done: false, id: id }
+    ]);
     return result;
   },
   deleteTodo: function(todos, idToDelete) {
