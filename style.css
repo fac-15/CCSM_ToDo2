@@ -120,6 +120,8 @@ form#add-todo input {
 
 form#add-todo input[type="submit"] {
   color: #fff;
+  background: #ff4c4c;
+  border: 1px solid #ff4c4c;
 }
 
 form.input .done {
