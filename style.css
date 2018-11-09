@@ -29,6 +29,7 @@ time, mark, audio, video {
 // reset end
 //-------------------------------------*/
 
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -36,16 +37,19 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16pt;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
   color: #ef9e82;
+  color: #ff4c4c;
   margin: auto;
   width: 350px;
   height: 70px;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
 ul li, form  {
@@ -78,12 +82,13 @@ button: active{
 }
 
 button: focus {
+
     background: orange;
     border-color: yellowgreen;
 }
 
 form {
-    margin-top: 6px;
+    margin-top: 20px;
 }
 
 li {
@@ -93,23 +98,28 @@ li {
   color: grey;
 }
 
-.check {
-  grid-column-start: 7;
-}
+li span {
+  font-size: .9em;
+  max-width: 310px;
+  word-wrap: break-word;
 
-.container input:checked ~ .checkmark {
-background-color: lawngreen;
 }
 
 form#add-todo {
   line-height: 4px;
   padding: 3px;
-  background:red;
+  background: #ff4c4c;
 }
 
-form#add-todo input{
+form#add-todo input {
     color: black;
-    font-weight: 900;
+    font-weight: 300;
+    padding: 10px;
+    font-size: 1em;
+}
+
+form#add-todo input[type="submit"] {
+  color: #fff;
 }
 
 form.input .done {
