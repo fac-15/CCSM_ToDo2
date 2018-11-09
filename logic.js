@@ -24,10 +24,6 @@ var todoFunctions = {
     });
   },
 
-  testFunc: function(a, b){
-    return a + b;
-  },
-
   addTodo: function(todos, newTodo) {
     var todosCopy = todoFunctions.cloneArrayOfObjects(todos);
     var id = todoFunctions.generateId();
@@ -54,7 +50,6 @@ var todoFunctions = {
     var result = todosCopy.filter(todo => todo.id !== idToDelete);
     console.log(result);
     return result;
-    // var deleteCopy
   },
   markTodo: function(todos, idToMark) {
     // should leave the input argument todos unchanged (you can use cloneArrayOfObjects)
