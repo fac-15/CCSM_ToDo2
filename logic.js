@@ -36,7 +36,6 @@ var todoFunctions = {
     var todosCopy = todoFunctions.cloneArrayOfObjects(todos);
     var id = todoFunctions.generateId();
     var result = todosCopy.concat([{description: newTodo, done: false, id: id}]);
-    console.log(result);
     return result;
 
   },
@@ -46,7 +45,6 @@ var todoFunctions = {
     // hint: array.filter
     var todosCopy = todoFunctions.cloneArrayOfObjects(todos);
     var result = todosCopy.filter(todo => todo.id !== idToDelete);
-    console.log(result);
     return result;
     // var deleteCopy
   },
@@ -69,7 +67,6 @@ var todoFunctions = {
         return todo;
       }
     });
-    console.log(result);
     return result;
   },
   sortTodos: function(todos, sortFunction) {
