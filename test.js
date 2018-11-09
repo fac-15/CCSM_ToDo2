@@ -34,6 +34,17 @@ test('Example test', function(t) {
   t.end();
 });
 
+test('Test if no content is added in the input', function(t) {
+  t.deepEqual(logic.addTodo( arr, " "), arr, "Todo list should not change");
+  t.end();
+});
+
+test('Test max lenght is not more than 200 characters', function(t) {
+  t.deepEqual(logic.addTodo( arr, "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qudscsd"), arr, "Todo list should stop at 200 characters");
+  t.end();
+});
+
+
 test('Add todo', function(t) {
   t.deepEqual(logic.addTodo(arr, "susan"), newArr, "should add new todo");
   t.end();

@@ -1,4 +1,3 @@
-
 // Part 1. Fill in any missing parts of the todoFunction object!
 // you can access these on todo.todoFunctions
 // For part one we expect you to use tdd
@@ -19,13 +18,9 @@ var todoFunctions = {
   //cloneArrayOfObjects will create a copy of the todos array
   //changes to the new array don't affect the original
   cloneArrayOfObjects: function(todos) {
-    return todos.map(function(todo){
+    return todos.map(function(todo) {
       return JSON.parse(JSON.stringify(todo));
     });
-  },
-
-  testFunc: function(a, b){
-    return a + b;
   },
 
   addTodo: function(todos, newTodo) {
@@ -37,7 +32,6 @@ var todoFunctions = {
     var id = todoFunctions.generateId();
     var result = todosCopy.concat([{description: newTodo, done: false, id: id}]);
     return result;
-
   },
   deleteTodo: function(todos, idToDelete) {
     // should leave the input argument todos unchanged (you can use cloneArrayOfObjects)
@@ -46,7 +40,6 @@ var todoFunctions = {
     var todosCopy = todoFunctions.cloneArrayOfObjects(todos);
     var result = todosCopy.filter(todo => todo.id !== idToDelete);
     return result;
-    // var deleteCopy
   },
   markTodo: function(todos, idToMark) {
     // should leave the input argument todos unchanged (you can use cloneArrayOfObjects)
@@ -55,12 +48,8 @@ var todoFunctions = {
     // hint: array.map
     var todosCopy = todoFunctions.cloneArrayOfObjects(todos);
     var result = todosCopy.map(todo => {
-      if(todo.id === idToMark) {
-        if (todo.done == false) {
-          todo.done = true;
-          return todo;
-        } else {
-          todo.done = false;
+      if (todo.id === idToMark) {
+        if ((todo.done = !todo.done)) {
           return todo;
         }
       } else {
@@ -74,9 +63,8 @@ var todoFunctions = {
     // should leave the input arguement todos unchanged (you can use cloneArrayOfObjects)
     // sortFunction will have same signature as the sort function in array.sort
     // hint: array.slice, array.sort
-  },
+  }
 };
-
 
 // Why is this if statement necessary?
 // The answer has something to do with needing to run code both in the browser and in Node.js
@@ -87,6 +75,6 @@ var todoFunctions = {
 //   module.exports = logic;
 // }
 
-if (typeof module !== 'undefined') {
+if (typeof module !== "undefined") {
   module.exports = todoFunctions;
 }
