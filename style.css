@@ -17,7 +17,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input {
   margin: 0;
   padding: 0;
   border: 0;
@@ -75,6 +75,7 @@ button {
     background-color: #f44336;
     height: 2em;
     width: 2em;
+
 }
 
 button: active{
@@ -116,16 +117,36 @@ form#add-todo input {
     font-weight: 300;
     padding: 10px;
     font-size: 1em;
+
 }
 
 form#add-todo input[type="submit"] {
   color: #fff;
   background: #ff4c4c;
   border: 1px solid #ff4c4c;
+  width: 88.36px;
+  height: 44px;
 }
 
 form.input .done {
   background: gray;
+}
+
+/*test*/
+form#add-todo input[type="submit"] {
+    color: #fff;
+    background: #ff4c4c;
+    border: 1px solid #ff4c4c;
+    /* width: 88.36px; */
+    height: 44px;
+    margin: 0;
+    text-align: right;
+
+}
+/*test*/
+
+form#add-todo input {
+  width: 11em;
 }
 
 submit {
