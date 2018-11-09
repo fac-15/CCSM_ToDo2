@@ -8,9 +8,11 @@
     "scripts": {
     "test": "tape test.js | tap-spec"
     }
-    ```
- - An overall issue for us was just reading and understanding the **existing codebase** - particularly when functions were being passed around between different files.
-<img src="https://media.giphy.com/media/3o6Ztl3rRVq6yZ5MT6/giphy.gif" width="200">.
+    ``` 
+- An overall issue for us was just reading and understanding the **existing codebase** - particularly when functions were being passed around between different files.
+
+![reading](https://media.giphy.com/media/3o6Ztl3rRVq6yZ5MT6/giphy.gif)
+
 - In loads of cases, we started writing code that had already been hinted at, or even fully provided for us.
 
 ## Lessons learnt 
