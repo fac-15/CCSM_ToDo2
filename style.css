@@ -1,11 +1,10 @@
 /*--------------------------------------
-// reset end
+// reset start
 //-------------------------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,65 +18,61 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
 /*--------------------------------------
 // reset end
 //-------------------------------------*/
+
+
 body {
-font-family: "Poppins", sans-serif;
-font-weight: 300;
-background-color: #eee;
-margin: 0;
-padding: 0;
-font-size: 16pt;
-margin-top:50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+  font-size: 16pt;
+  margin-top: 50px;
 }
 
 h1 {
-text-align: center;
-font-size: 2rem;
-color: #ef9e82;
-margin: auto;
-width: 350px;
-height: 70px;
+  text-align: center;
+  font-size: 4rem;
+  color: #ef9e82;
+  color: #ff4c4c;
+  margin: auto;
+  width: 350px;
+  height: 70px;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
-/*#todo-container, */
-
-
 ul li, form  {
-box-shadow: .5px .5px 5px #ccc;
-
-display: grid;
-grid-template-columns: 7fr 1fr;
-
-background-color: #fff;
-
-
-height: 50px;
-border-bottom: .5px solid #999;
-border-top: .5px solid #999;
-border-left: .5px solid #ddd;
-border-right: .5px solid #ddd;
-padding: 10px;
-width: 350px;
-margin: 0 auto;
-padding: 10px 5px;
-height: auto;
+  box-shadow: .5px .5px 5px #ccc;
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  background-color: #fff;
+  height: 50px;
+  border-bottom: .5px solid #999;
+  border-top: .5px solid #999;
+  border-left: .5px solid #ddd;
+  border-right: .5px solid #ddd;
+  padding: 10px;
+  width: 350px;
+  margin: 0 auto;
+  padding: 10px 5px;
+  height: auto;
 }
 
 button {
     grid-column-start: 6;
-
     border-radius: 90%;
-    background-color: #f44336; /* Red */
+    background-color: #f44336;
     height: 2em;
     width: 2em;
 }
@@ -86,62 +81,51 @@ button: active{
     background: olive;
 }
 
-
 button: focus {
+
     background: orange;
     border-color: yellowgreen;
 }
 
-
 form {
-    margin-top: 6px;
+    margin-top: 20px;
 }
 
-color: green;
+li {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-size: 1.5em;
+  color: grey;
 }
 
- li {
-grid-column-start: 1;
-grid-column-end: 5;
+li span {
+  font-size: .9em;
+  max-width: 310px;
+  word-wrap: break-word;
 
-
-font-size: 1.5em;
-color: grey;
-}
-.check {
-grid-column-start: 7;
-
-
-}
-
-/* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
-background-color: lawngreen;
 }
 
 form#add-todo {
-line-height: 4px;
-padding: 3px;
-    background:red;
+  line-height: 4px;
+  padding: 3px;
+  background: #ff4c4c;
 }
 
-form#add-todo input{
-/*    background: pink;*/
+form#add-todo input {
     color: black;
-    font-weight: 900;
+    font-weight: 300;
+    padding: 10px;
+    font-size: 1em;
 }
-form.input .done {
-background: gray;
 
+form#add-todo input[type="submit"] {
+  color: #fff;
+}
+
+form.input .done {
+  background: gray;
 }
 
 submit {
-padding: 10px 7px 10px;
-
-
+  padding: 10px 7px 10px;
 }
-
-@media screen and (min-width: 650px){
-
-}
-@media screen and (min-width: 650px)
