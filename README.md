@@ -9,6 +9,9 @@
     "test": "tape test.js | tap-spec"
     }
     ``` 
+ - Another hurdle was figuring out how to call functions that had been defined in logic.js, when we were in our test.js file. The clue was in 
+ ``` var logic = require('./logic.js'); ``` 
+ and that we needed to call ``` logic.function``` and not ``` todosFunction.function ``` since the logic.js file was exporting the todosFunction object - the magic is ``` module.exports = todoFunctions; ```. 
 - An overall issue for us was just reading and understanding the **existing codebase** - particularly when functions were being passed around between different files.
 
 ![reading](https://media.giphy.com/media/3o6Ztl3rRVq6yZ5MT6/giphy.gif)
