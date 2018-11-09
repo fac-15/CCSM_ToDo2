@@ -127,7 +127,7 @@ padding: 3px;
 
 form#add-todo input{
 /*    background: pink;*/
-    color: white;
+    color: black;
     font-weight: 900;
 }
 form.input .done {
